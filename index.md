@@ -5,7 +5,7 @@ hide: true
 show_reading_time: false
 ---
 
-Hi! My name is Rohan Chandra!
+Hi! My name is Rohan V Chandra!
 
 ### Development Environment
 

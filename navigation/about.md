@@ -46,6 +46,15 @@ Flags are made using Wikipedia images
         object-fit: cover;
         border-radius: 5px;
     }
+
+    .image-gallery figure {
+        margin: 0;
+        text-align: center;
+    }
+
+    .image-gallery figcaption {
+        margin-top: 5px;
+    }
 </style>
 
 <!-- This grid_container class is used by CSS styling and the id is used by JavaScript connection -->
@@ -119,19 +128,15 @@ Outside of school and technology, I enjoy activities that help me relax, stay ac
 - ✈️ I enjoy traveling and experiencing new places
 
 <comment>
-Gallery of Pics, scroll to the right for more ...
+Photo gallery
 </comment>
 <div class="image-gallery">
-  <img src="{{site.baseurl}}/images/about/missionary.jpg" alt="Image 1">
-  <img src="{{site.baseurl}}/images/about/john_tamara.jpg" alt="Image 2">
-  <img src="{{site.baseurl}}/images/about/tamara_fam.jpg" alt="Image 3">
-  <img src="{{site.baseurl}}/images/about/surf.jpg" alt="Image 4">
-  <img src="{{site.baseurl}}/images/about/john_lora.jpg" alt="Image 5">
-  <img src="{{site.baseurl}}/images/about/lora_fam.jpg" alt="Image 6">
-  <img src="{{site.baseurl}}/images/about/lora_fam2.jpg" alt="Image 7">
-  <img src="{{site.baseurl}}/images/about/pj_party.jpg" alt="Image 8">
-  <img src="{{site.baseurl}}/images/about/trent_family.png" alt="Image 9">
-  <img src="{{site.baseurl}}/images/about/claire.jpg" alt="Image 10">
-  <img src="{{site.baseurl}}/images/about/grandkids.jpg" alt="Image 11">
-  <img src="{{site.baseurl}}/images/about/farm.jpg" alt="Image 12">
+  <figure>
+    <img src="{{site.baseurl}}/images/about/rohan-travel.jpg" alt="Rohan exploring a city at night">
+    <figcaption>Exploring a new city</figcaption>
+  </figure>
+  <figure>
+    <img src="{{site.baseurl}}/images/about/rohan-dog.jpg" alt="Rohan's dog riding in the car">
+    <figcaption>My dog</figcaption>
+  </figure>
 </div>

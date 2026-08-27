@@ -5,9 +5,9 @@ permalink: /about/
 comments: true
 ---
 
-## As a conversation Starter
+## Places I Have Lived and Visited
 
-Here are some places I have lived.
+San Diego is home, but I have also spent time in North Carolina and traveled to places including Italy and Hawaii.
 
 <comment>
 Flags are made using Wikipedia images
@@ -57,13 +57,12 @@ Flags are made using Wikipedia images
     // 1. Make a connection to the HTML container defined in the HTML div
     var container = document.getElementById("grid_container"); // This container connects to the HTML div
 
-    // 2. Define a JavaScript object for our http source and our data rows for the Living in the World grid
-    var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
-    var living_in_the_world = [
-        {"flag": "0/01/Flag_of_California.svg", "greeting": "Hey", "description": "California - forever"},
-        {"flag": "b/b9/Flag_of_Oregon.svg", "greeting": "Hi", "description": "Oregon - 9 years"},
-        {"flag": "b/be/Flag_of_England.svg", "greeting": "Alright mate", "description": "England - 2 years"},
-        {"flag": "e/ef/Flag_of_Hawaii.svg", "greeting": "Aloha", "description": "Hawaii - 2 years"},
+    // 2. Define the data rows for the places in the grid
+    const living_in_the_world = [
+        {"flag": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg", "greeting": "Hi", "description": "San Diego, California - home for about 14 years"},
+        {"flag": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Flag_of_North_Carolina.svg", "greeting": "Hi", "description": "North Carolina - lived there for a few months"},
+        {"flag": "https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg", "greeting": "Ciao", "description": "Italy - visited"},
+        {"flag": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Hawaii.svg", "greeting": "Aloha", "description": "Hawaii - visited"},
     ];
 
     // 3a. Consider how to update style count for size of container
@@ -76,8 +75,8 @@ Flags are made using Wikipedia images
         gridItem.className = "grid-item";  // This class name connects the gridItem to the CSS style elements
         // Add "img" HTML tag for the flag
         var img = document.createElement("img");
-        img.src = http_source + location.flag; // concatenate the source and flag
-        img.alt = location.flag + " Flag"; // add alt text for accessibility
+        img.src = location.flag;
+        img.alt = location.description + " flag"; // add alt text for accessibility
 
         // Add "p" HTML tag for the description
         var description = document.createElement("p");

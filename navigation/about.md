@@ -139,4 +139,12 @@ Photo gallery
     <img src="{{site.baseurl}}/images/about/rohan-dog.jpg" alt="Rohan's dog riding in the car">
     <figcaption>My dog</figcaption>
   </figure>
+  <figure>
+    <img src="{{site.baseurl}}/images/about/california-flag.png" alt="Flag of California">
+    <figcaption>California, my home</figcaption>
+  </figure>
+  <figure>
+    <img src="{{site.baseurl}}/images/about/del-norte-foundation.png" alt="Del Norte High School Foundation logo">
+    <figcaption>Del Norte High School</figcaption>
+  </figure>
 </div>

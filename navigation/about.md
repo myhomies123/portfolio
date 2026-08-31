@@ -7,7 +7,7 @@ comments: true
 
 ## Places I Have Lived and Visited
 
-San Diego is home (fr), but I have also spent time in North Carolina and traveled to places including Italy and Hawaii.
+San Diego is home (i luv america), but I have also spent time in North Carolina and traveled to places including Italy and Hawaii.
 
 <comment>
 Flags are made using Wikipedia images

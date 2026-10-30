@@ -45,3 +45,6 @@ textarea,
 select {
     background-color: $background;
 }
+
+// CSS-to-SASS guide: shared profile feedback animation.
+@import "profile-feedback";

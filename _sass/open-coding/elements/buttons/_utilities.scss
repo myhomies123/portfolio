@@ -24,6 +24,33 @@
     border-radius: 999px;
 }
 
+// Shared fill/outline grammar used by the current OCS button lesson.
+.ocs__btn.fill {
+    background: color-mix(in srgb, var(--ocs-btn-tone) 20%, var(--pref-bg-color));
+}
+.ocs__btn.accent { --ocs-btn-tone: var(--pref-accent-color); }
+.ocs__btn.accent.fill {
+    color: var(--pref-text-color);
+    &:hover, &:focus-visible {
+        background: color-mix(in srgb, var(--ocs-btn-tone) 30%, var(--pref-bg-color));
+    }
+}
+.ocs__btn.outline {
+    background: transparent;
+    border: 1px solid var(--ocs-btn-tone);
+    color: var(--ocs-btn-tone);
+}
+.ocs__btn:focus-visible {
+    outline: 2px solid var(--ocs-btn-tone);
+    outline-offset: 3px;
+}
+.ocs__links--wide {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    > .ocs__btn { flex: 1 1 12rem; height: auto; min-height: 44px; }
+}
+
 @each $name, $tone in $ocs-alert-buttons {
     .ocs__btn.alert-#{$name} {
         --ocs-btn-tone: #{$tone};

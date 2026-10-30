@@ -901,6 +901,12 @@ def process_ui_runner_cells(notebook, permalink):
                 # Store metadata for later use
                 cell['metadata']['ui_runner'] = runner.to_metadata()
                 runner_index += 1
+
+                # The live UI runner is rendered from its source below. Exporting
+                # saved HTML output too duplicates controls, IDs, and scripts.
+                # Only clear this in-memory conversion copy; keep notebook evidence.
+                if cell.cell_type == 'code':
+                    cell['outputs'] = []
         
         processed_cells.append(cell)
     

@@ -1,0 +1,25 @@
+// Converted from assets/css/Aesthetihawk/shake.css.
+@import "materials/main.scss";
+
+$shake-step: 5px;
+$shake-distance: $shake-step * 3;
+$shake-duration: 0.3s;
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25%, 75% { transform: translateX(-$shake-distance); }
+  50% { transform: translateX($shake-distance); }
+}
+
+.shake-animation {
+  animation: shake $shake-duration ease-in-out;
+
+  &:focus-visible {
+    outline: 2px solid $accent;
+    outline-offset: $shake-step;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}

@@ -7,3 +7,8 @@
 @import "typography/main.scss";
 @import "status-indicators/main.scss";
 @import "forms/main.scss";
+// Shared grammar used by the SASS lessons.
+@import "containers/main";
+@import "grids/main";
+@import "../mixins/forms";
+@import "tables/main";

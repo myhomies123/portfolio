@@ -33,3 +33,15 @@
   }
 
 }
+
+// Homework previews grow with their content instead of leaving empty demo space.
+.ui-runner-container[data-sass-homework] {
+  .ui-output {
+    min-height: 0;
+    max-height: none;
+    overflow: visible;
+    padding: 1rem;
+  }
+  .control-panel { flex-wrap: wrap; }
+  textarea { width: 100%; box-sizing: border-box; }
+}

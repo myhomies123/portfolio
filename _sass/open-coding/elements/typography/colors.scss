@@ -8,7 +8,8 @@ p {
     color: $white3 !important;
 }
 
-a {
+// Let OCS buttons retain their semantic status and accent colors.
+a:not(.ocs__btn) {
     color: $lightBlue1 !important;
 
     &:hover {
